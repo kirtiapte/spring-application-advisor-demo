@@ -80,7 +80,7 @@ END
 chmod -R 777 $JFROG_HOME/artifactory/var
 cd $ADVISOR_DEMO_HOME
 tar -xzvf repoesbackup.zip
-docker run --name artifactory -v $ADVISOR_DEMO_HOME/repoesbackup:/repoesbackup -v $JFROG_HOME/artifactory/var/:/var/opt/jfrog/artifactory -d -p 8081:8081 -p 8082:8082 releases-docker.jfrog.io/jfrog/artifactory-oss:7.98.11
+docker run --name artifactory -v $ADVISOR_DEMO_HOME/repoesbackup:/repoesbackup -v $JFROG_HOME/artifactory/var/:/var/opt/jfrog/artifactory -d -p 8081:8081 -p 8082:8082 releases-docker.jfrog.io/jfrog/artifactory-oss:7.98.20
 
 while true
 do
